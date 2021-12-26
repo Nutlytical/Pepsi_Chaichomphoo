@@ -78,6 +78,11 @@ export default function CryptoNewsComponent({ sliceLastIndex }: Props) {
         </FormControl>
       )}
       <Box sx={{ width: "100%", mt: 3 }}>
+        {getCryptoNews && !getCryptoNews[0] && (
+          <Typography sx={{ mt: 4, mb: 4 }}>
+            Do not have any Crypto News for this Coin
+          </Typography>
+        )}
         <Grid container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           {getCryptoNews?.map((cryptoNew: any, index: number) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
