@@ -1,15 +1,21 @@
 import * as React from "react";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 import { Layout, CryptoCoin } from "components";
 
 const CryptoCoinPage = () => {
+  const router = useRouter();
+  const { coinId } = router.query;
+
+  let description = `Pepsi Crypto Coin ${coinId?.toString()}`;
+
   return (
     <>
       <Head>
-        <title>This title is for SEO</title>
+        <title>{description}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="This description is for SEO" />
+        <meta name="description" content={description} />
       </Head>
       <CryptoCoin />
     </>

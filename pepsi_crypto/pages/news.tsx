@@ -7,9 +7,9 @@ function CryptoNewsPage() {
   return (
     <>
       <Head>
-        <title>This title is for SEO</title>
+        <title>Pepsi Crypto News</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="This description is for SEO" />
+        <meta name="description" content="Pepsi Crypto News" />
       </Head>
       <CryptoNews />
     </>

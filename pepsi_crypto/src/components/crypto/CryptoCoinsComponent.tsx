@@ -64,7 +64,7 @@ export default function CryptoCoins({ sliceLastIndex }: Props) {
                 <CardHeader
                   action={
                     <Link
-                      href={`/cryptocurrency/coin/${coin.id}`}
+                      href={`/coin/${coin.id}`}
                       sx={{ textDecoration: "none" }}
                       color="text.primary"
                     >
@@ -73,7 +73,7 @@ export default function CryptoCoins({ sliceLastIndex }: Props) {
                   }
                   title={
                     <Link
-                      href={`/cryptocurrency/coin/${coin.id}`}
+                      href={`/coin/${coin.id}`}
                       sx={{ textDecoration: "none" }}
                       color="text.primary"
                     >

@@ -58,7 +58,7 @@ export default function CryptoHome() {
           </Grid>
           <Grid item xs={6}>
             <Typography gutterBottom component="div" align="right">
-              <Link href="/cryptocurrency/coins">Show more</Link>
+              <Link href="/coins">Show more</Link>
             </Typography>
           </Grid>
         </Grid>
@@ -74,7 +74,7 @@ export default function CryptoHome() {
           </Grid>
           <Grid item xs={6}>
             <Typography gutterBottom component="div" align="right">
-              <Link href="/cryptocurrency/news">Show more</Link>
+              <Link href="/news">Show more</Link>
             </Typography>
           </Grid>
         </Grid>
