@@ -106,7 +106,7 @@ export default function CryptoCoinComponent() {
 
   return (
     <>
-      <Typography variant="h3" align="center" gutterBottom component="div">
+      <Typography variant="h4" align="center" gutterBottom component="div">
         {coin?.name} ({coin?.slug}) Price
       </Typography>
       <Typography align="center" gutterBottom component="div">
@@ -229,7 +229,7 @@ export default function CryptoCoinComponent() {
                       {link.type}
                     </Box>
                   </Typography>
-                  <Link href={link.url} target="_blank">
+                  <Link href={link.url} target="_blank" rel="noreferrer">
                     {link.name}
                   </Link>
                 </Box>

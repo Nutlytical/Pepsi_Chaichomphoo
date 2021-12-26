@@ -12,6 +12,10 @@ export default class MyDocument extends Document {
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta
+            httpEquiv="Content-Security-Policy"
+            content="script-src 'none'"
+          ></meta>
           <link rel="shortcut icon" href="/static/favicon.ico" />
           <link
             rel="stylesheet"

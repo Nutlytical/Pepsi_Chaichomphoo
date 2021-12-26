@@ -84,7 +84,7 @@ export default function CryptoNewsComponent({ sliceLastIndex }: Props) {
               <Card sx={{ minWidth: 275 }}>
                 <CardHeader
                   action={
-                    <Link href={cryptoNew.url} target="_blank">
+                    <Link href={cryptoNew.url} target="_blank" rel="noreferrer">
                       <Avatar
                         variant="rounded"
                         alt={cryptoNew.name}
@@ -99,6 +99,7 @@ export default function CryptoNewsComponent({ sliceLastIndex }: Props) {
                     <Typography>
                       <Link
                         href={cryptoNew.url}
+                        rel="noreferrer"
                         target="_blank"
                         sx={{ textDecoration: "none" }}
                         color="text.primary"
