@@ -4,9 +4,9 @@ import styled from "styled-components";
 export default function Videos() {
   return (
     <VideosContainer>
-      <VideosSecondContainer>
-        {pepsiVideo.map((video, index) => (
-          <Video key={index}>
+      {pepsiVideo.map((video, index) => (
+        <Card key={index}>
+          <Video>
             <Thumbnail>
               <video controls width="100%" height="100%">
                 <source src={video.src} type="video/mp4" />
@@ -19,8 +19,8 @@ export default function Videos() {
               <Title>{video.description}</Title>
             </Details>
           </Video>
-        ))}
-      </VideosSecondContainer>
+        </Card>
+      ))}
     </VideosContainer>
   );
 }
@@ -32,20 +32,19 @@ const VideosContainer = styled.div`
   padding: 15px 15px;
   border-top: 1px solid #ddd;
   overflow-y: scroll;
-`;
-
-const VideosSecondContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 `;
 
+const Card = styled.div``;
+
 const Video = styled.div`
   width: 310px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: rgba(254, 254, 254, 0.8);
 `;
 
 const Thumbnail = styled.div`
