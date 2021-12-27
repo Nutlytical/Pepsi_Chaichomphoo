@@ -1,6 +1,6 @@
 # Pepsi Tube
 
-![alt text](https://github.com/Nutlytical/Pepsi_Chaichomphoo/blob/main/pepsi_tube/public/tube.jpg
+![alt text](https://github.com/Nutlytical/Pepsi_Chaichomphoo/blob/main/pepsi_tube/public/tube.jpg)
 
 ## Live site
 
