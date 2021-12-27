@@ -54,6 +54,7 @@ const Button = styled.button`
   height: 100%;
   border: none;
   border-radius: 0;
+  background-color: #ddd;
 `;
 
 const Icon = styled.i`
