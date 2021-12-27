@@ -5,7 +5,7 @@ export default function Videos() {
   return (
     <VideosContainer>
       {pepsiVideo.map((video, index) => (
-        <Card key={index}>
+        <div key={index}>
           <Video>
             <Thumbnail>
               <video controls width="100%" height="100%">
@@ -19,7 +19,7 @@ export default function Videos() {
               <Title>{video.description}</Title>
             </Details>
           </Video>
-        </Card>
+        </div>
       ))}
     </VideosContainer>
   );
@@ -34,17 +34,16 @@ const VideosContainer = styled.div`
   overflow-y: scroll;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 32px;
 `;
-
-const Card = styled.div``;
 
 const Video = styled.div`
   width: 310px;
-  margin-bottom: 20px;
   padding: 15px;
-  background-color: rgba(254, 254, 254, 0.8);
+  background-color: rgba(240, 240, 240, 0.8);
+  box-shadow: 2px 2px 10px #ddd;
 `;
 
 const Thumbnail = styled.div`
