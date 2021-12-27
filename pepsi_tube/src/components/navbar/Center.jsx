@@ -5,8 +5,8 @@ export default function Center() {
   return (
     <NavCenter>
       <Form>
-        <Input type="text" placeholder="Search..." />
-        <Button type="submit">
+        <Input type="text" placeholder="Search..." disabled />
+        <Button type="submit" onClick={(e) => e.preventDefault()}>
           <Icon>
             <i className="material-icons"> search </i>
           </Icon>

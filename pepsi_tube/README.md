@@ -1,8 +1,6 @@
 # Pepsi Tube
 
-"Working On it"
-
-<!-- ![alt text](https://github.com/Nutlytical/Pepsi_Chaichomphoo/blob/main/pepsi_tube/public/512.png) -->
+![alt text](https://github.com/Nutlytical/Pepsi_Chaichomphoo/blob/main/pepsi_tube/public/tube.jpg
 
 ## Live site
 
